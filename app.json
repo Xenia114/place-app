@@ -20,6 +20,25 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "scheme": "mapplacesnew",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Разрешите доступ к фотографиям для добавления изображений к местам на карте.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Разрешите доступ к геолокации, чтобы показывать ваше положение и находить метки поблизости."
+        }
+      ],
+      "expo-notifications",
+      "expo-sqlite"
+    ]
   }
 }
